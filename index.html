@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--No meu visual code configurei pra vir automaticamente "pt-br" ao criar a estrutura html-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3 - Alterar a cor do fundo</title>
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon"> <!--Acresentei como Favicon a logo do CAED (o site da fundação caed esta um icone q não é a logo, parece q é uma flor do ipe) -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+   <img src="imagens/logo.png" alt="logo caed">
+    <main class="button">
+        <div class="ball"></div>
+    </main>
+    <p>(Alterna o background entre verde e azul)</p>
+    <script>
+        document.querySelector('.ball').addEventListener('click', (e)=>{
+            e.target.classList.toggle('ball-move');
+            document.body.classList.toggle('azul');
+        });
+    </script>
+
+</body>
+</html>
+
